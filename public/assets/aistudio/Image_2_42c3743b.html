@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#0a1a3a","surface":"#131313","on-primary-container":"#4e3700","on-primary-fixed-variant":"#5d4201","primary-fixed":"#ffdea5","on-error-container":"#ffdad6","on-secondary-container":"#a6b5dc","outline-variant":"#4e4639","on-background":"#e5e2e1","inverse-surface":"#e5e2e1","surface-bright":"#3a3939","on-secondary":"#213050","on-tertiary-fixed":"#251a04","on-primary":"#412d00","tertiary-fixed-dim":"#d9c4a0","tertiary-container":"#b7a381","tertiary":"#d9c4a0","surface-container-low":"#1c1b1b","surface-container-lowest":"#0e0e0e","surface-dim":"#131313","surface-container-highest":"#353534","error":"#ffb4ab","primary":"#e9c176","secondary-fixed":"#d9e2ff","primary-container":"#c5a059","surface-tint":"#e9c176","inverse-on-surface":"#313030","inverse-primary":"#775a19","on-surface-variant":"#d1c5b4","on-primary-fixed":"#261900","surface-container":"#201f1f","on-error":"#690005","secondary-fixed-dim":"#b7c6ee","error-container":"#93000a","secondary-container":"#384668","primary-fixed-dim":"#e9c176","on-secondary-fixed-variant":"#384668","secondary":"#b7c6ee","outline":"#9a8f80","background":"#131313","on-tertiary-fixed-variant":"#53452a","on-tertiary-container":"#47391f","surface-variant":"#353534","on-surface":"#e5e2e1","tertiary-fixed":"#f6e0bb","surface-container-high":"#2a2a2a","on-tertiary":"#3c2e15"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-mobile":"1rem","space-xl":"6rem","space-lg":"3rem","gutter":"2rem","space-sm":"1rem","margin":"5rem","margin-mobile":"1.5rem","space-md":"1.5rem","space-xs":"0.5rem"},"fontFamily":{"headline-md":["Playfair Display"],"label-caps":["Inter"],"headline-sm":["Playfair Display"],"display-hero-mobile":["Playfair Display"],"label-sm":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Playfair Display"],"body-lg":["Inter"],"display-hero":["Playfair Display"],"headline-lg":["Playfair Display"],"title-md":["Inter"]},"fontSize":{"headline-md":["32px",{"lineHeight":"40px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.18em","fontWeight":"600"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"500"}],"display-hero-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"300"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"300"}],"display-hero":["72px",{"lineHeight":"84px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"58px","letterSpacing":"-0.015em","fontWeight":"400"}],"title-md":["18px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"500"}]}}}};</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface min-h-screen relative selection:bg-primary-container selection:text-on-primary-container antialiased overflow-x-hidden"><div class="fixed inset-0 pointer-events-none z-0 overflow-hidden"><div class="absolute -top-[20%] left-1/4 w-[700px] h-[700px] rounded-full bg-primary-container/10 blur-[140px]"></div><div class="absolute top-[45%] -right-[15%] w-[650px] h-[650px] rounded-full bg-secondary-container/20 blur-[150px]"></div><div class="absolute -bottom-[20%] left-[10%] w-[800px] h-[800px] rounded-full bg-surface-container-high/40 blur-[160px]"></div></div><header class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-space-sm px-gutter-mobile lg:px-gutter pointer-events-none"><div class="h-20 w-full max-w-[1440px] flex items-center justify-between px-space-md lg:px-space-lg rounded-full bg-surface-container-low/70 backdrop-blur-2xl shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7)] pointer-events-auto transition-all duration-300"><div class="flex items-center gap-space-sm"><img alt="Bularcrest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XtWvQoTji-Z_yQK7EBVGU77YkL5tRpKT59dZRZX6P9FiIgPF05ar6PwRwgop65mQEU3QI37NtP84OEiDXpwV8id7wXqIF09KAMTrcZWb05islsrOcSIMlgnir9wDzX2QvWg2QsXRPLpr-CGdIDXZE1rota6OAGwivjeDaZYW_i534tIg29iql525Y8iPUo3D3HEGa46GRSLbMtWPHU1r9XPqcyrTkksQg5zrvoPzJtmnO68aTBgHmfzLQU"/><a class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-light" data-path="home" href="#">Bularcrest</a></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-medium"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="services" href="#">Services</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="projects" href="#">Projects</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-[0_0_24px_rgba(197,160,89,0.25)]" data-path="inquiry" href="#">Get a Quote</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative z-10 w-full pt-20"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin min-h-[calc(100vh-140px)] flex flex-col justify-center"><div class="flex flex-col w-full text-on-surface selection:bg-primary-container selection:text-on-primary-container relative">
+<!-- Dynamic Spatial Ambient Atmosphere -->
+<div class="pointer-events-none absolute inset-0 overflow-hidden z-0">
+<div class="absolute bg-primary-container/10 w-[550px] h-[550px] rounded-full blur-[140px] pointer-events-none top-20 left-1/4 -translate-x-1/2"></div>
+<div class="absolute bg-secondary-container/20 w-[650px] h-[650px] rounded-full blur-[160px] pointer-events-none top-[650px] right-4"></div>
+<div class="absolute bg-primary/5 w-[500px] h-[500px] rounded-full blur-[150px] pointer-events-none top-[1500px] left-10"></div>
+</div>
+<!-- Hero Presentation Section -->
+<section class="min-h-[870px] lg:min-h-screen relative flex items-center justify-center overflow-hidden -mt-20 pt-28 pb-16 px-gutter-mobile md:px-0">
+<!-- Immersive Monumental Architectural Backdrop -->
+<div class="absolute inset-0 bg-cover bg-center w-full h-full scale-105 transition-transform duration-1000 ease-out" data-alt="Monolithic architectural concrete villa at dusk with warm interior ambient luminescence glowing through massive glass floor-to-ceiling panels, tranquil infinity reflection pool in foreground mirroring the structure, dark moody atmospheric twilight sky with champagne and warm bronze accents" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-KzYqCbFN0sa0t-zB6XFeqfvd54J271-I6XBaJKRtjjPQUDgCzOYxYJJsIHRrncjxVK0EN9Tgy2a9zEJis5243G54ftff8AUWLGGuDiIMvjHbTv-ToqPulMIcYojPmhr1bZ22vT__59nExVyJ1DKiyfUaNx8jp8PjKdXxwC9y2r5HqKX74X9-yjEIUCoE2CTdxaE1tgPIRsCcCMllbSczrMuqTkW2ULFROML0TpY7KawpAC8wL8psNw')"></div>
+<!-- Multi-tier Obsidian Vignette & Scrim -->
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest/80 via-surface-container-lowest/70 to-surface-container-lowest mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<!-- Floating Central Glass Monolith Card -->
+<div class="max-w-3xl w-full mx-auto p-8 sm:p-12 md:p-14 bg-surface-container-low/40 backdrop-blur-xl rounded-2xl shadow-[0_24px_60px_-15px_rgba(0,0,0,0.8),0_0_1px_1px_rgba(255,255,255,0.08)_inset] text-center relative z-10 transition-all duration-500 hover:shadow-[0_32px_70px_-10px_rgba(197,160,89,0.15),0_0_1px_1px_rgba(197,160,89,0.25)_inset]">
+<!-- Architectural Division Pill -->
+<div class="inline-flex items-center gap-2 px-space-md py-1 rounded-full bg-surface-container-highest/40 mb-6 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.25em]">Construction • Design • Energy • Security</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-display-hero text-on-surface tracking-tight leading-tight mb-6 font-light">
+        We build spaces <span class="italic font-normal text-primary">that last</span>.
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed font-light">
+        Modern construction, bespoke architectural permanence, and integrated intelligence. Precision crafted for generations.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary hover:text-on-primary hover:scale-[1.03] transition-all duration-300 shadow-[0_0_30px_rgba(197,160,89,0.25)] group" data-path="inquiry" href="#">
+<span>Start Your Project</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-surface-container-high/60 text-on-surface font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container-highest transition-all duration-300" href="#services">
+<span>Explore Domains</span>
+<span class="material-symbols-outlined text-[18px] text-primary">expand_more</span>
+</a>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-3 gap-4 pt-10 mt-10 border-t border-white/5">
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-on-surface font-light">18+</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider text-[9px] mt-1">Years Mastery</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-primary font-light">140</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider text-[9px] mt-1">Sites Erected</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md text-on-surface font-light">99.8%</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider text-[9px] mt-1">Structural Precision</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Architectural Photographic Showcase Section -->
+<section class="w-full py-16 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<div class="md:col-span-7 relative group overflow-hidden rounded-2xl shadow-2xl bg-surface-container-low/50">
+<div class="w-full h-[380px] md:h-[500px] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist cast-in-place raw architectural concrete walls with cantilevered glass terrace overlooking rocky shoreline at twilight, architectural recessed warm downlights casting gold geometric pools on polished stone floors" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCD_eFf2sLxQlzmmxZhFmYTbSOsAxCBEpKLWmaoHhjtbjwgaAUmkoajLDO2ahL-TPUEQTbRDK4StJvynu9WSe7jBV94N5iQ5SdoyZOJxGpcDXVpLz8GMs_pgehLYQy-fGDEp8SzHPNvwP9l4d0H9qjdgBX3PprYg6uNa2ZYaawnjPdWkVotc_S8de1ksbVM5w9Z0t5jwerj5jJVEi53pKZqKSHDI73LUiazDq5k16WcpP7ViXshxCKjQw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase">Alpine Monolith Residence</span>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-0.5">Engadin Valley, Switzerland</p>
+</div>
+<span class="px-3 py-1 rounded bg-surface-container-lowest/70 backdrop-blur-md font-label-caps text-[10px] text-tertiary uppercase">2024 Retrospective</span>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center space-y-6 md:pl-6">
+<div class="flex items-center gap-2">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Sovereign Construction</span>
+</div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-light leading-snug">
+          Where physical permanence meets quiet intelligence.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          Every pavilion, residence, and institutional envelope we execute balances raw geological presence with seamless, invisible technology. We believe true luxury is acoustic isolation, thermal balance, and architectural conviction.
+        </p>
+<div class="p-6 rounded-xl bg-surface-container-low/60 backdrop-blur-md shadow-sm flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-normal">Certified Seismic &amp; Energy Standard</h3>
+<p class="font-body-md text-body-md text-outline text-xs mt-0.5">Engineered to exceed SN EN 1998-1 Eurocode thresholds.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="w-full py-space-xl relative z-10" id="services">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-6 h-[1px] bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">Our Expertise</span>
+</div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-light tracking-tight">
+          Architectural &amp; Technical Mastery
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md font-light">
+        A unified continuum of structural construction, clean energy grids, and integrated defensive enclosures.
+      </p>
+</div>
+<!-- 6 Glassmorphic Services Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- 1. Construction -->
+<div class="group bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(197,160,89,0.12),0_0_1px_1px_rgba(197,160,89,0.3)_inset] flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:text-on-primary-container transition-colors">engineering</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Structural Execution</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light mt-1 mb-3">Construction</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            We build durable, modern structures engineered with reinforced post-tensioned concrete, monolithic stone, and timeless structural longevity.
+          </p>
+</div>
+<div class="pt-6 mt-6 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary text-xs uppercase tracking-wider">Heavy Civil &amp; Homes</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<!-- 2. Architecture -->
+<div class="group bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(197,160,89,0.12),0_0_1px_1px_rgba(197,160,89,0.3)_inset] flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:text-on-primary-container transition-colors">domain</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Spatial Direction</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light mt-1 mb-3">Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            We design functional, beautiful spaces harmonizing landscape contours, daylight vectors, and monumental geometric proportions.
+          </p>
+</div>
+<div class="pt-6 mt-6 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary text-xs uppercase tracking-wider">Concept to Reality</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<!-- 3. Energy -->
+<div class="group bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(197,160,89,0.12),0_0_1px_1px_rgba(197,160,89,0.3)_inset] flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:text-on-primary-container transition-colors">solar_power</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Self-Sufficiency</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light mt-1 mb-3">Energy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            We install reliable solar power arrays, micro-grid energy reserves, and geothermal thermal exchange systems for total autonomy.
+          </p>
+</div>
+<div class="pt-6 mt-6 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary text-xs uppercase tracking-wider">Net-Zero Standard</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<!-- 4. Security -->
+<div class="group bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(197,160,89,0.12),0_0_1px_1px_rgba(197,160,89,0.3)_inset] flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:text-on-primary-container transition-colors">security</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Perimeter Defense</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light mt-1 mb-3">Security</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            We set up smart CCTV systems, biometric point access, air-gapped monitoring bunkers, and subtle ballistic glass installations.
+          </p>
+</div>
+<div class="pt-6 mt-6 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary text-xs uppercase tracking-wider">Passive &amp; Active Shield</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<!-- 5. Lighting -->
+<div class="group bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(197,160,89,0.12),0_0_1px_1px_rgba(197,160,89,0.3)_inset] flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:text-on-primary-container transition-colors">light_mode</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Circadian Optics</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light mt-1 mb-3">Lighting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            We create perfect lighting for any room, programming micro-recessed fixtures that sync with solar cycles and heighten architectural mood.
+          </p>
+</div>
+<div class="pt-6 mt-6 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary text-xs uppercase tracking-wider">Atmospheric Scenarios</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+<!-- 6. Interiors -->
+<div class="group bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_rgba(197,160,89,0.12),0_0_1px_1px_rgba(197,160,89,0.3)_inset] flex flex-col justify-between min-h-[300px]">
+<div>
+<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-primary text-[28px] group-hover:text-on-primary-container transition-colors">brush</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-widest">Material Finish</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light mt-1 mb-3">Interiors</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+            We finish spaces with premium details: hand-plastered tadelakt walls, patinated bronze joinery, and custom acoustic walnut paneling.
+          </p>
+</div>
+<div class="pt-6 mt-6 border-t border-white/5 flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary text-xs uppercase tracking-wider">Bespoke Millwork</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section (Sticky Split Architecture) -->
+<section class="w-full py-space-xl relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Sticky Narrative Column -->
+<div class="lg:col-span-5 lg:sticky lg:top-36 h-fit space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-high">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">Foundational Principles</span>
+</div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-light tracking-tight leading-tight">
+          Our Core Values
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          In an era of disposable design and fleeting trends, Bularcrest Atelier anchors itself in unyielding spatial permanence. We reject compromise, building structures meant to outlive generations.
+        </p>
+<!-- Inline SVG Quality Standard Seal -->
+<div class="p-6 rounded-2xl bg-surface-container-low/40 backdrop-blur-xl shadow-lg flex items-center gap-5 mt-8">
+<svg class="w-14 h-14 text-primary shrink-0" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24" r="22" stroke="currentColor" stroke-dasharray="4 2" stroke-width="1.5"></circle>
+<path d="M24 10V38M10 24H38" stroke="currentColor" stroke-opacity="0.4" stroke-width="1"></path>
+<circle cx="24" cy="24" fill="currentColor" fill-opacity="0.15" r="14"></circle>
+<polygon fill="currentColor" points="24,14 27,21 34,22 29,27 30,34 24,30 18,34 19,27 14,22 21,21"></polygon>
+</svg>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface tracking-wider uppercase font-semibold">Bularcrest Seal</div>
+<div class="font-body-md text-xs text-on-surface-variant mt-0.5">Swiss-engineered structural warranty &amp; 50-year envelope guarantee.</div>
+</div>
+</div>
+</div>
+<!-- Right Vertical Stack of Glass Panels -->
+<div class="lg:col-span-7 space-y-6 flex flex-col">
+<!-- Panel 1: Quality -->
+<div class="bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 sm:p-10 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:shadow-[0_24px_50px_rgba(197,160,89,0.1),0_0_1px_1px_rgba(197,160,89,0.3)_inset] group">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-caps text-xs font-semibold">I</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light">Quality</h3>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase text-xs">Zero Compromise</span>
+</div>
+<div class="font-title-md text-primary font-normal mb-3">
+            "We use the best materials."
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+            From volcanic basalt flooring to sustainably sourced aged alpine larch and carbon-reinforced concrete matrixes, every component is rigorously tested for thermal fatigue, acoustic absorption, and tactile majesty.
+          </p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Sovereign Aggregate</span>
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Triple-Glazed Schüco</span>
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Hand-Cast Bronze</span>
+</div>
+</div>
+<!-- Panel 2: Integrity -->
+<div class="bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 sm:p-10 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:shadow-[0_24px_50px_rgba(197,160,89,0.1),0_0_1px_1px_rgba(197,160,89,0.3)_inset] group">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-caps text-xs font-semibold">II</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light">Integrity</h3>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase text-xs">Radical Clarity</span>
+</div>
+<div class="font-title-md text-primary font-normal mb-3">
+            "We tell you the truth."
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+            Transparent timelines, open-book cost accounting, and genuine engineering analysis. We never obfuscate delays or engineer false expectations. Our client-architect relationship is built on complete structural candor.
+          </p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Real-time Portal</span>
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Transparent Escrow</span>
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Fixed Milestones</span>
+</div>
+</div>
+<!-- Panel 3: Safety -->
+<div class="bg-surface-container-low/40 backdrop-blur-xl rounded-2xl p-8 sm:p-10 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.7),0_0_1px_1px_rgba(255,255,255,0.06)_inset] transition-all duration-300 hover:shadow-[0_24px_50px_rgba(197,160,89,0.1),0_0_1px_1px_rgba(197,160,89,0.3)_inset] group">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-caps text-xs font-semibold">III</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-light">Safety</h3>
+</div>
+<span class="font-label-caps text-label-caps text-primary uppercase text-xs">Absolute Vigilance</span>
+</div>
+<div class="font-title-md text-primary font-normal mb-3">
+            "We keep every site safe."
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+            Uncompromising safety protocols on active sites safeguard our artisans, engineers, and neighboring environments. We hold a zero-incident track record across complex cantilevered and subterranean developments.
+          </p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">ISO 45001 Verified</span>
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Autonomous Telemetry</span>
+<span class="px-3 py-1 rounded bg-surface-container-high font-label-caps text-[10px] text-on-surface-variant uppercase">Zero Incidents</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Project Dossier Feature -->
+<section class="w-full py-16 relative z-10">
+<div class="p-8 sm:p-12 md:p-16 rounded-3xl bg-surface-container-low/50 backdrop-blur-2xl shadow-[0_32px_64px_-16px_rgba(0,0,0,0.8),0_0_1px_1px_rgba(255,255,255,0.06)_inset] flex flex-col lg:flex-row items-center gap-12">
+<div class="w-full lg:w-1/2 space-y-6">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded bg-primary/10 text-primary font-label-caps text-label-caps uppercase">Selected Monograph</span>
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Project 049</span>
+</div>
+<h3 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-light">
+          The Obsidian Pavilion
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          Integrated into the volcanic rock edge of the Mediterranean, this private pavilion merges a 35kW subterranean solar battery bank, passive sea-breeze thermal cooling, and biometric sanctuary spaces.
+        </p>
+<div class="flex items-center gap-6 pt-4">
+<div>
+<span class="block font-headline-sm text-headline-sm text-primary font-light">780 m²</span>
+<span class="font-label-caps text-[10px] text-outline uppercase">Conditioned Space</span>
+</div>
+<div class="w-px h-10 bg-white/10"></div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-on-surface font-light">100%</span>
+<span class="font-label-caps text-[10px] text-outline uppercase">Off-Grid Solar</span>
+</div>
+<div class="w-px h-10 bg-white/10"></div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-on-surface font-light">14 mo</span>
+<span class="font-label-caps text-[10px] text-outline uppercase">Execution Timeline</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 relative group overflow-hidden rounded-2xl">
+<div class="w-full h-80 sm:h-96 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Interior of architectural pavilion looking outward through massive open glass sliders toward the ocean at sunset, minimalist furniture in warm taupe and charcoal, delicate gold strip lighting accenting the dark cast-concrete ceiling beams" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCTFfPuIvB0QUSu138R9QCoOBPnkn19Dq32EdSvQuPLGtJcr5_S-Yex-26gfFqIn7LG8sMyJkLVAg0F-svMs9qjff1xlovaF5ItDPUnWLTIYPMA5Szalha5cruhMX8p0l00slRwwy9wEFn0IlNcTPiu9vikS7D1a5-iLX8FwQeV2Y0UcMzNl-CSkbXeL9k5B-q0JLPa-lmRzst0h468m3Ni6C6zv5eF0z4IPWRRhw6Q2CFummWV7ZngJA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 right-4">
+<a class="px-4 py-2 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface hover:text-primary font-label-caps text-xs uppercase tracking-wider flex items-center gap-1.5 transition-colors" href="#">
+<span>View Full Archive</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom CTA & Direct Inquiry Glass Banner -->
+<section class="w-full pt-12 pb-space-lg relative z-10">
+<div class="bg-surface-container-low/50 backdrop-blur-2xl rounded-3xl p-10 md:p-16 shadow-[0_24px_60px_-12px_rgba(0,0,0,0.8),0_0_1px_1px_rgba(197,160,89,0.2)_inset] relative overflow-hidden">
+<!-- Glow Accent Inside Card -->
+<div class="absolute -top-24 -right-24 w-80 h-80 rounded-full bg-primary-container/15 blur-[90px] pointer-events-none"></div>
+<div class="max-w-2xl mx-auto text-center relative z-10 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-primary/10">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-[0.2em]">Initiate Commission</span>
+</div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface font-light tracking-tight leading-tight">
+          Let’s build something great.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light">
+          Connect directly with our senior partners and master architects. We take on a strictly limited cohort of 8 commissions per calendar year.
+        </p>
+<!-- Newsletter / Contact Input Form -->
+<form class="pt-4 flex flex-col sm:flex-row items-center gap-3 max-w-lg mx-auto" onsubmit="event.preventDefault(); const btn = this.querySelector('button'); btn.textContent = 'Inquiry Received'; btn.classList.add('bg-primary');">
+<input class="w-full bg-surface-container-lowest/80 border-0 border-b border-white/20 rounded-full sm:rounded-l-full sm:rounded-r-none px-6 py-4 text-on-surface font-body-md placeholder:text-outline focus:outline-none focus:border-primary transition-all duration-300 shadow-inner" placeholder="Enter your private email..." required="" type="email"/>
+<button class="w-full sm:w-auto shrink-0 px-8 py-4 rounded-full sm:rounded-r-full sm:rounded-l-none bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-all duration-300 shadow-[0_0_24px_rgba(197,160,89,0.3)] cursor-pointer" type="submit">
+            Contact Us
+          </button>
+</form>
+<div class="flex items-center justify-center gap-6 pt-6 text-on-surface-variant font-label-sm text-xs">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">lock</span>
+            Confidential NDA Standard
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">schedule</span>
+            24hr Partner Response
+          </span>
+</div>
+</div>
+</div>
+</section>
+</div></div></main><footer class="relative z-10 w-full bg-surface-container-lowest/80 backdrop-blur-xl mt-space-xl"><div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin py-space-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-light">Bularcrest</span><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Bespoke monumental and private residential architecture for collectors of spatial permanence.</p></div><div class="flex flex-wrap gap-space-lg items-center"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="services" href="#">Services</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="projects" href="#">Projects</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors tracking-widest" data-path="about" href="#">About</a><a class="font-label-caps text-label-caps uppercase text-primary hover:text-primary-fixed transition-colors tracking-widest" data-path="inquiry" href="#">Get a Quote</a></div></div><div class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-gutter lg:px-margin pb-space-lg flex flex-col md:flex-row justify-between items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><p>© 2025 Bularcrest Atelier. All rights reserved.</p><div class="flex gap-space-md"><span class="font-label-caps text-label-caps tracking-widest uppercase">Zurich</span><span class="font-label-caps text-label-caps tracking-widest uppercase">Kyoto</span><span class="font-label-caps text-label-caps tracking-widest uppercase">London</span></div></div></footer></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "Bularcrest Digital Platform",
+  "description": "Bespoke architectural permanence, modern construction, and integrated intelligence for collectors of spatial design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
